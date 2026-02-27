@@ -12,7 +12,7 @@ export function clearInput() {
 function welcoming() {
   let aReturn = [];
   currentState = matchaDecision;
-  aReturn.push("Welcome to Cozy Cafe!")
+  aReturn.push("Welcome to Ocha Ocha!")
   aReturn.push("Would you like a matcha?");
   return aReturn;
 }
