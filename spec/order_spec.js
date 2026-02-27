@@ -1,23 +1,23 @@
 import { handleInput, clearInput } from '../Order.js';
 
-describe("Tests all stages of a coffee order", function () {
+describe("Tests all stages of a matcha order", function () {
 
     beforeEach(function () {
         clearInput();
     });
 
-    it("asks if user wants coffee", function () {
+    it("asks if user wants a matcha", function () {
         const aResults = handleInput("hello");
-        expect(aResults[0]).toBe("Would you like a coffee?");
+        expect(aResults[0]).toBe("Would you like a matcha?");
     });
 
-    it("user says no to coffee", function () {
+    it("user says no to matcha", function () {
         handleInput("hello");
         const aResults = handleInput("no");
         expect(aResults[0]).toBe("Maybe next time!");
     });
 
-    it("user says yes to coffee and is asked iced or hot", function () {
+    it("user says yes to matcha and is asked iced or hot", function () {
         handleInput("hello");
         const aResults = handleInput("yes");
         expect(aResults[0]).toBe("Iced or hot?");

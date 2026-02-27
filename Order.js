@@ -11,14 +11,14 @@ export function clearInput() {
 // STATE 1: Welcome
 function welcoming() {
   let aReturn = [];
-  currentState = coffeeDecision;
+  currentState = matchaDecision;
   aReturn.push("Welcome to Cozy Cafe!")
-  aReturn.push("Would you like a coffee?");
+  aReturn.push("Would you like a matcha?");
   return aReturn;
 }
 
-// STATE 2: Coffee yes/no
-function coffeeDecision(sInput) {
+// STATE 2: matcha yes/no
+function matchaDecision(sInput) {
   let aReturn = [];
 
   if (sInput.toLowerCase().startsWith("y")) {
